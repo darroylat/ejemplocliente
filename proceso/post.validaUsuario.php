@@ -18,7 +18,7 @@ if (isset($_POST['usuario']) && isset($_POST['clave'])){
         $_SESSION['id'] = $split[4];
         console_log(split[3]);
         echo $split[1];
-        header("location: ../index.php");
+        header("location:../index.php");
     }
 }else{
     echo 'nada';

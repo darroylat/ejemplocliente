@@ -183,6 +183,8 @@ function validaLogin(){
                 campo = response.split('|');
                 if(campo[0] == "0001"){
                     alert(campo[1]);
+                }else{
+                  location.reload();
                 }
 
 

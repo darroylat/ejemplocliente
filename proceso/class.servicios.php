@@ -1,19 +1,19 @@
 <?php
-require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'/webservice/nusoap/lib/nusoap.php');
+require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'/ejemplocliente/nusoap/lib/nusoap.php');
 
 class Servicios{
 
 var $usuario = 'cliente';
 var $clave = '123456';
 
-var $urlValidaUsuario = 'http://webservice.lerolero.cl/mountain/usuario/valida_usuario.php';
-var $urlVerEventos = 'http://webservice.lerolero.cl/mountain/evento/obtener_evento_todos.php';
-var $urlEvento = 'http://webservice.lerolero.cl/mountain/evento/obtener_evento_individual.php';
-var $urlValidaInscripcionEvento = 'http://webservice.lerolero.cl/mountain/inscripcion/valida/valida_inscripcion_evento.php';
-var $urlEliminarInscripcionEvento = 'http://webservice.lerolero.cl/mountain/inscripcion/eliminar/eliminar_inscripcion_evento.php';
-var $urlIncripcionEvento = 'http://webservice.lerolero.cl/mountain/inscripcion/registro/registrar_inscripcion_evento.php';
-var $urlIngresoComprobante = 'http://webservice.lerolero.cl/mountain/comprobante/ingresa_comprobante.php';
-var $urlRegistroUsuario = 'http://webservice.lerolero.cl/mountain/usuario/registrar_usuario.php';
+var $urlValidaUsuario = 'http://webservice.opencloud.lerolero.cl/mountain/usuario/valida_usuario.php';
+var $urlVerEventos = 'http://webservice.opencloud.lerolero.cl/mountain/evento/obtener_evento_todos.php';
+var $urlEvento = 'http://webservice.opencloud.lerolero.cl/mountain/evento/obtener_evento_individual.php';
+var $urlValidaInscripcionEvento = 'http://webservice.opencloud.lerolero.cl/mountain/inscripcion/valida/valida_inscripcion_evento.php';
+var $urlEliminarInscripcionEvento = 'http://webservice.opencloud.lerolero.cl/mountain/inscripcion/eliminar/eliminar_inscripcion_evento.php';
+var $urlIncripcionEvento = 'http://webservice.opencloud.lerolero.cl/mountain/inscripcion/registro/registrar_inscripcion_evento.php';
+var $urlIngresoComprobante = 'http://webservice.opencloud.lerolero.cl/mountain/comprobante/ingresa_comprobante.php';
+var $urlRegistroUsuario = 'http://webservice.opencloud.lerolero.cl/mountain/usuario/registrar_usuario.php';
 
     function valida_usuario($user, $pass){
         $serverURL = $this->urlValidaUsuario;
